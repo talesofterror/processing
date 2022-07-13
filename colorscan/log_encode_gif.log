@@ -1,0 +1,264 @@
+ffmpeg version 2021-02-16-git-8331eb058d-full_build-www.gyan.dev Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 10.2.0 (Rev6, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-lzma --enable-libsnappy --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-sdl2 --enable-libdav1d --enable-libzvbi --enable-librav1e --enable-libsvtav1 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-ffnvcodec --enable-nvdec --enable-nvenc --enable-d3d11va --enable-dxva2 --enable-libmfx --enable-libglslang --enable-vulkan --enable-opencl --enable-libcdio --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libilbc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint
+  libavutil      56. 65.100 / 56. 65.100
+  libavcodec     58.123.100 / 58.123.100
+  libavformat    58. 67.100 / 58. 67.100
+  libavdevice    58. 12.100 / 58. 12.100
+  libavfilter     7.107.100 /  7.107.100
+  libswscale      5.  8.100 /  5.  8.100
+  libswresample   3.  8.100 /  3.  8.100
+  libpostproc    55.  8.100 / 55.  8.100
+Splitting the commandline.
+Reading option '-v' ... matched as option 'v' (set logging level) with argument 'debug'.
+Reading option '-nostdin' ... matched as option 'stdin' (enable or disable interaction on standard input) with argument 0.
+Reading option '-progress' ... matched as option 'progress' (write program-readable progress information) with argument 'C:/Users/michr/AppData/Local/Temp/KritaFFmpegProgress.SqwxXU'.
+Reading option '-r' ... matched as option 'r' (set frame rate (Hz value, fraction or abbreviation)) with argument '12'.
+Reading option '-start_number' ... matched as AVOption 'start_number' with argument '0'.
+Reading option '-i' ... matched as input url with argument 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued%04d.png'.
+Reading option '-i' ... matched as input url with argument 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/palette.png'.
+Reading option '-lavfi' ... matched as option 'lavfi' (create a complex filtergraph) with argument '[0:v][1:v] paletteuse'.
+Reading option '-y' ... matched as option 'y' (overwrite output files) with argument '1'.
+Reading option 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/eye256 render2.gif' ... matched as output url.
+Finished splitting the commandline.
+Parsing a group of options: global .
+Applying option v (set logging level) with argument debug.
+Applying option nostdin (enable or disable interaction on standard input) with argument 0.
+Applying option progress (write program-readable progress information) with argument C:/Users/michr/AppData/Local/Temp/KritaFFmpegProgress.SqwxXU.
+[file @ 0000029cf17ef000] Setting default whitelist 'file,crypto,data'
+Applying option lavfi (create a complex filtergraph) with argument [0:v][1:v] paletteuse.
+Applying option y (overwrite output files) with argument 1.
+Successfully parsed a group of options.
+Parsing a group of options: input url C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued%04d.png.
+Applying option r (set frame rate (Hz value, fraction or abbreviation)) with argument 12.
+Successfully parsed a group of options.
+Opening an input file: C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued%04d.png.
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0000.png' for reading
+[file @ 0000029cf1833e80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf183c040] Statistics: 17382 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0001.png' for reading
+[file @ 0000029cf1833f40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf1888780] Statistics: 15842 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0002.png' for reading
+[file @ 0000029cf183b280] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf183b400] Statistics: 15294 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0003.png' for reading
+[file @ 0000029cf183b340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf183b640] Statistics: 15236 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0004.png' for reading
+[file @ 0000029cf183b340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf183b800] Statistics: 15148 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0005.png' for reading
+[file @ 0000029cf1896e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf183b800] Statistics: 15099 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0006.png' for reading
+[file @ 0000029cf189abc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf189acc0] Statistics: 15148 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0007.png' for reading
+[file @ 0000029cf189abc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf183c040] Statistics: 15236 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0008.png' for reading
+[file @ 0000029cf189abc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf18a2700] Statistics: 15225 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0009.png' for reading
+[file @ 0000029cf18a2700] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf189abc0] Statistics: 15232 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0010.png' for reading
+[file @ 0000029cf189abc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf1834f40] Statistics: 15225 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0011.png' for reading
+[file @ 0000029cf1834f40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf1835040] Statistics: 15236 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0012.png' for reading
+[file @ 0000029cf1cd4cc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf1cd4dc0] Statistics: 15148 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0013.png' for reading
+[file @ 0000029cf1cd4cc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf1cd4dc0] Statistics: 15099 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0014.png' for reading
+[file @ 0000029cf1cd4cc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf1cd4dc0] Statistics: 15148 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0015.png' for reading
+[file @ 0000029cf1cd4cc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf1cd4dc0] Statistics: 15236 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0016.png' for reading
+[file @ 0000029cf1cd4cc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf1cd4dc0] Statistics: 15225 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0017.png' for reading
+[file @ 0000029cf1cd4cc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf1cd4dc0] Statistics: 15232 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0018.png' for reading
+[file @ 0000029cf1cd4cc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf1cd4dc0] Statistics: 15225 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0019.png' for reading
+[file @ 0000029cf1cd4cc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf1cd4dc0] Statistics: 15236 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0020.png' for reading
+[file @ 0000029cf1cd4cc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf1cd4dc0] Statistics: 15148 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0021.png' for reading
+[file @ 0000029cf1cd4cc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf1cd4dc0] Statistics: 15099 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0022.png' for reading
+[file @ 0000029cf1cd4cc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf1cd4dc0] Statistics: 15148 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0023.png' for reading
+[file @ 0000029cf1cd4cc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf1cd4dc0] Statistics: 15236 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0024.png' for reading
+[file @ 0000029cf1cd4cc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf1cd4dc0] Statistics: 15225 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0025.png' for reading
+[file @ 0000029cf1cd4cc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf1cd4dc0] Statistics: 15232 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0026.png' for reading
+[file @ 0000029cf1cd4cc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf1cd4dc0] Statistics: 15225 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0027.png' for reading
+[file @ 0000029cf1cd4cc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf1cd4dc0] Statistics: 15236 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0028.png' for reading
+[file @ 0000029cf1d10e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf1cd4cc0] Statistics: 15148 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0029.png' for reading
+[file @ 0000029cf1d10e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf1cd4cc0] Statistics: 15099 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0030.png' for reading
+[file @ 0000029cf1d10e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf1cd4cc0] Statistics: 15148 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0031.png' for reading
+[file @ 0000029cf1d10e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf1cd4cc0] Statistics: 15236 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0032.png' for reading
+[file @ 0000029cf1d10e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf1cd4cc0] Statistics: 15225 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0033.png' for reading
+[file @ 0000029cf1d10e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf1cd4cc0] Statistics: 15232 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0034.png' for reading
+[file @ 0000029cf1d10e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf1cd4cc0] Statistics: 15225 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0035.png' for reading
+[file @ 0000029cf1d10e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf1cd4cc0] Statistics: 15236 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0036.png' for reading
+[file @ 0000029cf1d10e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf1cd4cc0] Statistics: 15148 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0037.png' for reading
+[file @ 0000029cf1d10e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf1cd4cc0] Statistics: 15099 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0038.png' for reading
+[file @ 0000029cf1d10e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf1cd4cc0] Statistics: 15148 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0039.png' for reading
+[file @ 0000029cf1d10e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf1cd4cc0] Statistics: 15236 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0040.png' for reading
+[file @ 0000029cf1d10e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf1cd4cc0] Statistics: 15225 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0041.png' for reading
+[file @ 0000029cf1d10e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf1d45e40] Statistics: 15232 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0042.png' for reading
+[file @ 0000029cf1d10e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf1d45e40] Statistics: 15225 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0043.png' for reading
+[file @ 0000029cf1d10e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf1d45e40] Statistics: 15236 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0044.png' for reading
+[file @ 0000029cf1d10e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf1d45e40] Statistics: 15148 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0045.png' for reading
+[file @ 0000029cf1d10e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf1d45e40] Statistics: 15099 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0046.png' for reading
+[file @ 0000029cf1d10e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf1d45e40] Statistics: 15148 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0047.png' for reading
+[file @ 0000029cf1d10e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf1d45e40] Statistics: 15236 bytes read, 0 seeks
+[image2 @ 0000029cf182f300] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued0048.png' for reading
+[file @ 0000029cf1d10e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029cf1d45e40] Statistics: 15236 bytes read, 0 seeks
+Input #0, image2, from 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued%04d.png':
+  Duration: 00:00:01.96, start: 0.000000, bitrate: N/A
+  Stream #0:0, 49, 1/25: Video: png, 1 reference frame, rgba(pc), 256x256 [SAR 11811:11811 DAR 1:1], 0/1, 25 fps, 25 tbr, 25 tbn, 25 tbc
+Successfully opened the file.
+Parsing a group of options: input url C:/Users/michr/Google Drive/Drawing/Processing/eye256/palette.png.
+Successfully parsed a group of options.
+Opening an input file: C:/Users/michr/Google Drive/Drawing/Processing/eye256/palette.png.
+[NULL @ 0000029cf1832b80] Opening 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/palette.png' for reading
+[file @ 0000029cf17dad80] Setting default whitelist 'file,crypto,data'
+[png_pipe @ 0000029cf1832b80] Format png_pipe probed with size=2048 and score=99
+[png_pipe @ 0000029cf1832b80] Before avformat_find_stream_info() pos: 0 bytes read:370 seeks:0 nb_streams:1
+[png_pipe @ 0000029cf1832b80] After avformat_find_stream_info() pos: 370 bytes read:370 seeks:0 frames:1
+Input #1, png_pipe, from 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/palette.png':
+  Duration: N/A, bitrate: N/A
+  Stream #1:0, 1, 1/25: Video: png, 1 reference frame, rgba(pc), 16x16 [SAR 1:1 DAR 1:1], 0/1, 25 fps, 25 tbr, 25 tbn, 25 tbc
+Successfully opened the file.
+Parsing a group of options: output url C:/Users/michr/Google Drive/Drawing/Processing/eye256/eye256 render2.gif.
+Successfully parsed a group of options.
+Opening an output file: C:/Users/michr/Google Drive/Drawing/Processing/eye256/eye256 render2.gif.
+[file @ 0000029cf1837080] Setting default whitelist 'file,crypto,data'
+Successfully opened the file.
+detected 24 logical cores
+Stream mapping:
+  Stream #0:0 (png) -> paletteuse:default
+  Stream #1:0 (png) -> paletteuse:palette
+  paletteuse -> Stream #0:0 (gif)
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0000029cf182f300] Thread message queue blocking; consider raising the thread_queue_size option (current value: 8)
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+    Last message repeated 16 times
+[graph 0 input from stream 0:0 @ 0000029cf1896e00] Setting 'video_size' to value '256x256'
+[graph 0 input from stream 0:0 @ 0000029cf1896e00] Setting 'pix_fmt' to value '26'
+[graph 0 input from stream 0:0 @ 0000029cf1896e00] Setting 'time_base' to value '1/12'
+[graph 0 input from stream 0:0 @ 0000029cf1896e00] Setting 'pixel_aspect' to value '11811/11811'
+[graph 0 input from stream 0:0 @ 0000029cf1896e00] Setting 'frame_rate' to value '12/1'
+[graph 0 input from stream 0:0 @ 0000029cf1896e00] w:256 h:256 pixfmt:rgba tb:1/12 fr:12/1 sar:11811/11811
+[graph 0 input from stream 1:0 @ 0000029cf183b180] Setting 'video_size' to value '16x16'
+[graph 0 input from stream 1:0 @ 0000029cf183b180] Setting 'pix_fmt' to value '26'
+[graph 0 input from stream 1:0 @ 0000029cf183b180] Setting 'time_base' to value '1/25'
+[graph 0 input from stream 1:0 @ 0000029cf183b180] Setting 'pixel_aspect' to value '1/1'
+[graph 0 input from stream 1:0 @ 0000029cf183b180] Setting 'frame_rate' to value '25/1'
+[graph 0 input from stream 1:0 @ 0000029cf183b180] w:16 h:16 pixfmt:rgba tb:1/25 fr:25/1 sar:1/1
+[format @ 0000029cf1882500] Setting 'pix_fmts' to value 'rgb8|bgr8|rgb4_byte|bgr4_byte|gray|pal8'
+[auto_scaler_0 @ 0000029cf1dda940] w:iw h:ih flags:'bilinear' interl:0
+[Parsed_paletteuse_0 @ 0000029cf221de80] auto-inserting filter 'auto_scaler_0' between the filter 'graph 0 input from stream 0:0' and the filter 'Parsed_paletteuse_0'
+[auto_scaler_1 @ 0000029cf1ddaa40] w:iw h:ih flags:'bilinear' interl:0
+[Parsed_paletteuse_0 @ 0000029cf221de80] auto-inserting filter 'auto_scaler_1' between the filter 'graph 0 input from stream 1:0' and the filter 'Parsed_paletteuse_0'
+[AVFilterGraph @ 0000029cf1885800] query_formats: 5 queried, 2 merged, 2 already done, 0 delayed
+[swscaler @ 0000029cf229ff40] Forcing full internal H chroma due to input having non subsampled chroma
+[auto_scaler_0 @ 0000029cf1dda940] w:256 h:256 fmt:rgba sar:11811/11811 -> w:256 h:256 fmt:bgra sar:1/1 flags:0x2
+[swscaler @ 0000029cf22ace80] Forcing full internal H chroma due to input having non subsampled chroma
+[auto_scaler_1 @ 0000029cf1ddaa40] w:16 h:16 fmt:rgba sar:1/1 -> w:16 h:16 fmt:bgra sar:1/1 flags:0x2
+[Parsed_paletteuse_0 @ 0000029cf221de80] [framesync @ 0000029cf221df88] Selected 1/300 time base
+[Parsed_paletteuse_0 @ 0000029cf221de80] [framesync @ 0000029cf221df88] Sync level 2
+Output #0, gif, to 'C:/Users/michr/Google Drive/Drawing/Processing/eye256/eye256 render2.gif':
+  Metadata:
+    encoder         : Lavf58.67.100
+  Stream #0:0, 0, 1/100: Video: gif, 1 reference frame, pal8(pc, progressive), 256x256 (0x0) [SAR 1:1 DAR 1:1], 0/1, q=2-31, 200 kb/s, 12 fps, 100 tbn (default)
+    Metadata:
+      encoder         : Lavc58.123.100 gif
+Clipping frame in rate conversion by 0.000008
+frame=    1 fps=0.0 q=-0.0 size=       0kB time=00:00:00.01 bitrate=   0.0kbits/s speed=6.04x    [gif @ 0000029cf1836c00] 256x256 image at pos (0;0) [area:256x256]
+    Last message repeated 46 times
+[gif @ 0000029cf1836c00] 1x1 image at pos (255;255) [area:256x256]
+[Parsed_paletteuse_0 @ 0000029cf221de80] [framesync @ 0000029cf221df88] Sync level 0
+[out_0_0 @ 0000029cf183b280] EOF on sink link out_0_0:default.
+No more output streams to write to, finishing.
+frame=   49 fps=0.0 q=-0.0 Lsize=     325kB time=00:00:04.01 bitrate= 663.9kbits/s speed=59.8x    
+[AVIOContext @ 0000029cf182f140] Statistics: 0 seeks, 2 writeouts
+video:325kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.006010%
+Input file #0 (C:/Users/michr/Google Drive/Drawing/Processing/eye256/plagued%04d.png):
+  Input stream #0:0 (video): 49 packets read (747366 bytes); 49 frames decoded; 
+  Total: 49 packets (747366 bytes) demuxed
+Input file #1 (C:/Users/michr/Google Drive/Drawing/Processing/eye256/palette.png):
+  Input stream #1:0 (video): 1 packets read (370 bytes); 1 frames decoded; 
+  Total: 1 packets (370 bytes) demuxed
+Output file #0 (C:/Users/michr/Google Drive/Drawing/Processing/eye256/eye256 render2.gif):
+  Output stream #0:0 (video): 49 frames encoded; 49 packets muxed (332759 bytes); 
+  Total: 49 packets (332759 bytes) muxed
+50 frames successfully decoded, 0 decoding errors
+[AVIOContext @ 0000029cf1d27e00] Statistics: 0 seeks, 2 writeouts
+[AVIOContext @ 0000029cf18aec80] Statistics: 370 bytes read, 0 seeks
