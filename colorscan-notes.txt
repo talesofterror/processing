@@ -1,0 +1,29 @@
+
+
+I want a function that finds a color, then changes each pixel of that color to another color. 
+
+So far I have: 
+	3 primary color declarations:
+	- one which determines the color to find (pixelBlack)
+	- one which determines the color to start with (blackStart)
+	- one which determines the color to change to (blackFinish)
+
+	2 secondary color declarations: 
+	- one which houses the lerpColor() function (blackLerp)
+    - one which stores the orginal so that it can find it in the next frame (blackMem) 
+
+As it stands now, the process takes the targetColor and stuffs it into memory. It then creates a lerpColor value between the startColor and the endColor, with lerpColor's "amount" property plugged into a sine oscilator. 
+
+pixelScan() then scans the image for pixels that match targetColor, and replaces each pixel with the value of lerpColor that frame.
+
+The idea is I should be able to do all this shit within one function.  
+
+~~~
+
+Do I want a function that also loads the pixels? Should pixelScan be a class? 
+
+The process actually begins with me creating a PImage type named "image," loading the image from the file with "eye = loadImage('image.png')", and loading the pixels of that image with "image.loadPixels()" 
+
+colorScan(targetColor, startColor, endColor) {
+    
+}
