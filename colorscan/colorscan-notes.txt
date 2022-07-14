@@ -10,7 +10,7 @@ So far I have:
 
 	2 secondary color declarations: 
 	- one which houses the lerpColor() function (blackLerp)
-    - one which stores the orginal so that it can find it in the next frame (blackMem) 
+    	- one which stores the value of blackLerp within a given frame (blackMem) 
 
 As it stands now, the process takes the targetColor and stuffs it into memory. It then creates a lerpColor value between the startColor and the endColor, with lerpColor's "amount" property plugged into a sine oscilator. 
 
@@ -27,3 +27,18 @@ The process actually begins with me creating a PImage type named "image," loadin
 colorScan(targetColor, startColor, endColor) {
     
 }
+
+
+~
+
+Alright. I made a class called pixelscanner and have put a function in there that scans the pixels and another than lerps between colors. 
+
+The issue now is that I was orginally mistaken about what blackMem was doing. It is storing the value of blackLerp within a given frame so that the current blackLerp value is used to rescane the image in the next frame (scanner.colorLerp()). 
+
+I made a newColorLerp() function inside the pixelscanner class, which now stores it's own lerpTarget value. newColorLerp() takes in a target color, defined by lerpTarget, goes through the pixels and changes their color, updates the pixels, and displays the new image for that frame, all within that function within that class. blackMem, now targetMem and stored in the class only, is updated to lerpedColor within that function. A lerpOut() function sets lerpTarget to the current value of targetMem and returns the current value of targetMem. lerpOut() had to be called after newColorLerp(). I'm hoping I got that all down right. 
+
+There's an issue with the rhythm of my oscillator, where one color lingers longer than another. There's also a discrepancy between the rhtyhm of the old process and the new one. I am keeping the old process around in comments for some reason. 
+
+Tried adding a new pixelscanner class for scanWhite, which works but doesn't yet combine with the updatePixels() and image() produced by scanBlack.  
+
+I should make pixelscanner.lerpTarget a property of pixelscanner.pixelLoad so I can do it in one line. or just create a separate function to load the image so I don't have to reload it when declaring a new pixelscanner. I'd also like to not have to say pixelscanner.lerpOut() after every lerp. 
