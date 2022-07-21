@@ -42,3 +42,9 @@ There's an issue with the rhythm of my oscillator, where one color lingers longe
 Tried adding a new pixelscanner class for scanWhite, which works but doesn't yet combine with the updatePixels() and image() produced by scanBlack.  
 
 I should make pixelscanner.lerpTarget a property of pixelscanner.pixelLoad so I can do it in one line. or just create a separate function to load the image so I don't have to reload it when declaring a new pixelscanner. I'd also like to not have to say pixelscanner.lerpOut() after every lerp. 
+
+~
+
+I'll probably need an array to combined the two pixel maps created by each scanner, unless using "this" will work. I still don't really know how "this" works though. 
+
+Nevermind, I fix it by making color not tapped by the scanner transparent. Not today, arrays and "this"!

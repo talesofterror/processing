@@ -1,50 +1,52 @@
 
 class pixelscanner {
 
-   PImage image;
-   
-   color lerpTarget;
-   color targetMem;
+  PImage image;
+
+  color lerpTarget;
+  color targetMem;
 
 
-   void pixelLoad(String file) {
+  void pixelLoad(String file) {
 
-      image = loadImage(file);
-      image.loadPixels();
-   }
+    this.image = loadImage(file);
+    this.image.loadPixels();
+  }
 
-   void colorLerp(color a, color lerp) {
+  void colorLerp(color a, color lerp) {
 
-      for (int i = 0; i < width*height; i++) {
-         if (image.pixels[i] == a) {
-            image.pixels[i] = lerp;
-         }
+    for (int i = 0; i < width*height; i++) {
+      if (image.pixels[i] == a) {
+        image.pixels[i] = lerp;
       }
-   }
+    }
+  }
 
-   void newColorLerp(color target, color startColor, 
-                     color endColor, float lerpValue) {
-      
-      color lerpedColor;
-      lerpedColor = lerpColor(startColor, endColor, lerpValue);
+  void newColorLerp(color startColor, 
+    color endColor, float lerpValue) {
 
-      for (int i = 0; i < width * height; i++) {
-         if (image.pixels[i] == target) {
-            image.pixels[i] = lerpedColor;
-         }
-      }
+    color lerpedColor;
+    lerpedColor = lerpColor(startColor, endColor, lerpValue);
 
-      targetMem = lerpedColor;
-      image.updatePixels();
-      image(image, 0, 0);
-   }
+    for (int i = 0; i < width * height; i++) {
+      if (this.image.pixels[i] == this.lerpTarget) {
+        this.image.pixels[i] = lerpedColor;
+      } else if ( this.image.pixels[i] != this.lerpTarget) {
+        this.image.pixels[i] = color(0, 0, 0, 1); }
+    }
+
+    this.targetMem = lerpedColor;
+    this.image.updatePixels();
+    image(this.image, 0, 0);
+    //this.image.resize(dimensionX, 0);
+  }
 
 
-   color lerpOut () {
-      
-      lerpTarget = targetMem;
-      color memory = targetMem;
+  color lerpOut () {
 
-      return memory;
-   }
+    this.lerpTarget = this.targetMem;
+    color memory = this.targetMem;
+
+    return memory;
+  }
 }
