@@ -9,12 +9,12 @@ pixelscanner scan5;
 pixelscanner scan6;
 
 void setup () {
-   size(800, 800);
+   size(800, 400);
    frameRate(20);
 
    getSurface().setLocation(1500, 300);
 
-   String imageFile = "4.png";
+   String imageFile = "main.png";
 
    scanBlack = new pixelscanner();
    scanBlack.pixelLoad(imageFile);
@@ -56,7 +56,7 @@ float sine (float freq, float amp) {
 void draw() {
    background(0);
 
-   float speed = 200;
+   float speed = 500;
 
    scanBlack.colorLerp(color(56, 229, 116), color(56, 229, 202), sine(speed, 0));
    scanBlack.lerpOut();
@@ -82,12 +82,12 @@ void draw() {
    println("sine value: " + sine(speed, 0) + ". fream number: " + frameCount);
    // might repeat well after 12 frames
 
-   saveFrames(12);
+   saveFrames(31);
 }
 
 void saveFrames (int numberOfFrames) {
    if (frameCount < numberOfFrames) {
-      saveFrame("4/4_####.png");
+      saveFrame("main/main_####.png");
    } else {
       noLoop();
       print("render complete");
