@@ -1,48 +1,57 @@
 
 float time = 0; 
 float pulse;
-float bpm = 0.25;
+float freq = 10;
 int dimensionX;
 int dimensionY;
 
 PImage eye;
-pixelscanner scanBlack;
-pixelscanner scanWhite;
 
-float testSine;
+pixelscanner springSkull;
 
+// EYE
+// pixelscanner scanBlack;
+// pixelscanner scanWhite;
 
 void setup() {
-  size(1600, 1600);
+  size(800, 800);
   frameRate(12);
   getSurface().setLocation(500, 200);
 
-  testSine = sineOfTime(50, 10);
+  springSkull = new pixelscanner("spring-skull.png");
 
-  scanBlack = new pixelscanner();
-  scanBlack.pixelLoad("eye500.png");
-  scanBlack.lerpTarget = color(0, 0, 0);
+  // EYE 500
+  //
+  // scanBlack = new pixelscanner();
+  // scanBlack.pixelLoad("eye500.png");
+  // scanBlack.lerpTarget = color(0, 0, 0);
 
-  scanWhite = new pixelscanner();
-  scanWhite.pixelLoad("eye500.png");
-  scanWhite.lerpTarget = color(255, 255, 255);
+  // scanWhite = new pixelscanner();
+  // scanWhite.pixelLoad("eye500.png");
+  // scanWhite.lerpTarget = color(255, 255, 255);
 }
 
 void draw() {
 
-  float sineInc = sineOfTime(30, 1);
-  println(sineInc);
+  float sineInc = sineOfTime2(freq, 1);
+  // println(sineInc);
   
   background(0);
 
-  scanBlack.newColorLerp(color(255, 0, 0), color(0, 0, 255), sineInc);
-  scanBlack.lerpOut();
+  springSkull.image.resize(width, height);
+  image(springSkull.image, 0, 0);
 
-  scanWhite.newColorLerp(color(255, 155, 0), color(255, 55, 0), sineInc);
-  scanWhite.lerpOut();
+  // EYE 500
+  //
+  // scanBlack.colorLerp(color(233, 50, 255), color(0, 0, 255), sineInc);
+  // scanBlack.lerpOut();
+
+  // scanWhite.colorLerp(color(0, 55, 255), color(255, 55, 0), sineInc);
+  // scanWhite.lerpOut();
   
   //sineVisualizer(sineOfTime(50, 10), width*0.7, height*0.7);
-  sineWave(sineInc, width*0.7, height*0.7, 50, 50);
+  sineWave2(sineInc, freq, width*0.7, height*0.7, 50, 0);
+  
   
   if (keyPressed) {
     if (key == 'w'){
@@ -56,8 +65,18 @@ void draw() {
 float sineOfTime (float freq, float amp) {
   float timeOverFreq = (TWO_PI / freq * time);
   float sine = amp * abs(sin(timeOverFreq));
-  time++;
+  time+=1;
   //println(time);
+
+  return sine;
+}
+
+float sineOfTime2(float freq, float amp) {
+  float timeOverFreq = TWO_PI / freq * time;
+  // float timeOverFreq = TWO_PI / freq * frameCount/2;
+  float sine = amp * sin(timeOverFreq) + 0.5;
+  time+=0.2;
+  // time = frameCount / 5;
   return sine;
 }
 
@@ -73,13 +92,22 @@ void sineVisualizer (float sine, float xCoord, float yCoord) {
   }
 }
 
-void sineWave(float sine, float xPos, float yPos, float amp, float phase) {
-  float i = 0;
-  strokeWeight(3);
-  for (float x = xPos; x <= xPos + 100; x+=1) {
-    float yInc = round(sine);
-    point(x, yPos + yInc + i);
-    i+=0.2;
+void sineWave(float freq, float xPos, float yPos, float amp, float phase) {
+  strokeWeight(5);
+  for (float x = xPos; x <= xPos + 300; x+=1) {
+    float yInc = round(sineOfTime2(freq, amp) * amp + phase);
+    point(x, yPos + yInc);
+  }
+}
+
+// Unable to get this working with the sine parameter.
+// When I call it with sineInc I get a flat line. 
+void sineWave2(float sine, float freq, float xPos, float yPos, float amp, float phase) {
+  strokeWeight(5);
+  for (float x = xPos; x <= xPos + 300; x+=1) {
+    // float yInc = round(sineOfTime2(freq, amp) * amp + phase);
+    float yInc = sine;
+    point(x, yPos + yInc);
   }
 }
 

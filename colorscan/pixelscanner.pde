@@ -7,22 +7,28 @@ class pixelscanner {
   color targetMem;
 
 
-  void pixelLoad(String file) {
+  pixelscanner(String file) {
 
     this.image = loadImage(file);
     this.image.loadPixels();
   }
 
-  void colorLerp(color a, color lerp) {
+  // void colorLerp(color a, color lerp) {
 
-    for (int i = 0; i < width*height; i++) {
-      if (image.pixels[i] == a) {
-        image.pixels[i] = lerp;
-      }
-    }
-  }
+  //   for (int i = 0; i < width*height; i++) {
+  //     if (image.pixels[i] == a) {
+  //       image.pixels[i] = lerp;
+  //     }
+  //   }
+  // }
 
-  void newColorLerp(color startColor, 
+
+// COULD REFACTOR colorLerp() TO INCORPORATE METHOD CHAINING
+// Something like:
+//  pixelscanner.startColor("...").endColor("...").lerp(lerpValue) 
+// Maybe find a way to make lerpOut() unnecessary?
+
+  void colorLerp(color startColor, 
     color endColor, float lerpValue) {
 
     color lerpedColor;
