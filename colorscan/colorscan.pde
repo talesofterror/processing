@@ -49,8 +49,8 @@ void draw() {
   // scanWhite.colorLerp(color(0, 55, 255), color(255, 55, 0), sineInc);
   // scanWhite.lerpOut();
   
-  //sineVisualizer(sineOfTime(50, 10), width*0.7, height*0.7);
-  sineWave2(sineInc, freq, width*0.7, height*0.7, 50, 0);
+  sineVisualizer(sineOfTime(50, 10), width*0.7, height*0.7);
+  // sineWave2(sineInc, freq, width*0.7, height*0.7, 50, 0);
   
   
   if (keyPressed) {
@@ -101,7 +101,7 @@ void sineWave(float freq, float xPos, float yPos, float amp, float phase) {
 }
 
 // Unable to get this working with the sine parameter.
-// When I call it with sineInc I get a flat line. 
+// When I call it with sineInc I get a flat line.     
 void sineWave2(float sine, float freq, float xPos, float yPos, float amp, float phase) {
   strokeWeight(5);
   for (float x = xPos; x <= xPos + 300; x+=1) {
