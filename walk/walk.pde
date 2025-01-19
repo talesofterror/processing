@@ -42,6 +42,7 @@ void bouncingDot () {
 }
 
 void directionToggle() {
+  
   if (direction == Direction.forward) {
     direction = Direction.backward;
   } else {

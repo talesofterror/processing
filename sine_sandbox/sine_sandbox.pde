@@ -1,16 +1,19 @@
 float time = 0;
+float speed = 1;
 boolean pause = false;
+color introStrokeColor = color(255, 220, 10);
 
 void setup() {
   size(600, 600);
   frameRate(24);
-  getSurface().setLocation(1000, 300);
+  getSurface().setLocation(300, 300);
   }
 
 void draw() {
   background(50);
-  time = frameCount / 1;
-
+  time = frameCount / speed;
+  
+  float sineOfTime50 = sineOfTime(50); 
   float absSine50 = absSine(50);
 
   stroke(255);
@@ -19,17 +22,17 @@ void draw() {
   fill(255);
 
   line(95, 5, 95, absSine50 * 100);
-  text(absSine50, 100, 120);
-  println(absSine50);
+  text(sineOfTime50, 100, 100);
+  // println(absSine50);
 
-  text(absSine50, 100, 100);
+  text(absSine50, 100, 120);
   for (float x = 100; x <= 200; x+=1) {
     float yInc = round(sineOfTime(20) * 10);
     point(x, 150 + yInc);
   }
 
   fill(255, 204, 0);
-  stroke(255, 220, 10);
+  stroke(introStrokeColor);
   text("function", 100, 190);
   sineWave(100, 220, 10, 0); // sineWave( x, y, amp, phase )
   sineWave(100, 220, 20, 0);
