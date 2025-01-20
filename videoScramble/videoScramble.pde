@@ -4,7 +4,7 @@ int fileCount = 1717;
 int sizeX = 800;
 int sizeY = 800;
 
-int animationSpeed = 10;
+int animationSpeed = 24;
 int currentFrame = 0;
 
 void setup () {
@@ -19,7 +19,7 @@ void setup () {
   
   surface.setLocation(0,0);
   frameRate(animationSpeed);
-  size(sizeX, sizeY);
+  size(400, 400);
 }
 
 void draw() {
@@ -33,9 +33,9 @@ private String formatNumber (int i) {
     return "000" + index;
   } else if (index.length() == 2) {
     return "00" + index;
-  } else {
+  } else if (index.length() == 3) {
     return "0" + index;
-  }
+  } else return index;
 }
 
 int calculateFrame () {
